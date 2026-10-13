@@ -1,0 +1,19 @@
+# Chapter 7 CPU Scheduling Homework
+
+## Overview （概述/结果概述）
+In this assignment, we explore three classic CPU scheduling algorithms: FIFO, SJF and Round‑Robin (RR).
+ 本次作业，我们研究3种CPU调度算法：FIFO、SJF、RR
+
+We use the provided scheduler simulator to run different workloads and analyze turnaround time and response time. 使用模拟器跑不同任务，分析周转时间、响应时间
+
+Key findings:
+1. SJF gives priority to shorter jobs, which reduces average turnaround time but causes long jobs to suffer longer response time.
+ SJF优先短作业，降低平均周转时间，但是长作业响应时间会变长
+2. Round‑Robin uses a fixed time quantum. As quantum size increases, the worst-case response time becomes larger.
+ RR时间片越大，最坏响应时间越大
+3. When RR quantum is large enough (>= longest job length), RR behaves exactly the same as non-preemptive SJF.
+   RR时间片足够大的时候，表现和SJF一模一样
+
+All raw simulator output files are saved inside the `data/` folder.
+Detailed answers for each question are written in `analysis.md`.
+ 说明文件位置：原始模拟器输出放在data，详细答题在analysis.md
